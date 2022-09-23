@@ -23,7 +23,7 @@ deploy:
     secret_access_key: process.env.SECRET_ACCESS_KEY
     bucket: process.env.BUCKET
     skip_cleanup: true
-    acl: private # look into this more
+    # acl: private # look into this more
     local_dir: ./dist
     on:
       branch: main
