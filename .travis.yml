@@ -22,7 +22,7 @@ deploy:
     access_key_id: process.env.ACCESS_KEY_ID
     secret_access_key: process.env.SECRET_ACCESS_KEY
     bucket: process.env.BUCKET
-    # skip_cleanup: true
+    skip_cleanup: true
     acl: private # look into this more
     local_dir: ./dist
     on:
