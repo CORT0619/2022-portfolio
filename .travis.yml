@@ -24,6 +24,6 @@ deploy:
     bucket: $BUCKET
     skip_cleanup: true
     # acl: private # look into this more
-    local_dir: ./dist
+    local_dir: ./dist/2022-portfolio
     on:
       branch: main
