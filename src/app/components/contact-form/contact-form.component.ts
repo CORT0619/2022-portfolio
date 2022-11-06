@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/services/portfolio.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private portfolioService: PortfolioService
+  ) { }
 
   ngOnInit(): void {
+  }
+  submitForm() {
+    console.log('submitting...');
+    this.portfolioService.sendFormMessage();
   }
 
 }

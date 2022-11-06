@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+  font-family: NTR, sans-serif;
+  font-size: 2em;
+}
+
+p {
+  font-family: Khula, sans-serif;
+  font-size: 1.125em;
+}
+
+.container {
+ margin-inline: auto;
+ width: min(75%, 73rem); /*width: 90%; max-width: 70.5*/
+}
+
+// img { // uncomment this
+//   display: block;
+//   max-width: 100%;
+// }
+
+// header,
+// section,
+// footer {
+//   padding: 3rem 0;
+// }
+
+button {
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+
+.md-36 {
+  font-size: 36px; // change this
+}

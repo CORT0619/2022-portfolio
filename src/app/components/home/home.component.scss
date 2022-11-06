@@ -1,0 +1,58 @@
+.mobile-nav__container {
+  // outline: 2px solid #000;
+  height: 30px;
+  width: 30px;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.mobile-nav::after {
+  content: '';
+  height: 3px;
+  // width: 100%;
+  display: block;
+  background-color: #FFF;
+  // margin-right: 25px;
+  margin-bottom: 5px;
+}
+
+.large-header {
+  // font-size:
+}
+
+.navigation {
+  display: flex;
+  background-color: #000;
+  color: #FFF;
+
+  &__container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+  // width: 75%; /* modify - depends on screen size */
+  height: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.close-button {
+  text-align: right;
+  padding-top: 10px;
+  padding-right:12px;
+}
+
+// .nav::after {
+//   right: 0;
+//   content: '';
+//   height: 100%;
+//   width: 100%;
+//   display: block;
+//   background-color: rgba($color: #514e4e, $alpha: 1.0)
+// }

@@ -1,0 +1,34 @@
+<header>
+  <div class="navigation">
+    <div class="navigation__container">
+      <div class="mobile-nav__container" (click)="openNav()">
+        <div class="mobile-nav"></div>
+        <div class="mobile-nav"></div>
+        <div class="mobile-nav"></div>
+      </div>
+      <div>CW.</div>
+      <nav class="nav" [@openClose]="isOpen ? 'open' : 'closed'">
+        <div class="close-button">
+          <!-- <img src="assets/icons/close.svg" alt="Navigation Close Button">
+           -->
+           <span class="material-icons md-36" (click)="openNav()">close</span>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link">Home</a></li>
+          <li class="nav__item"><a class="nav__link">About</a></li>
+          <li class="nav__item"><a class="nav__link">Projects</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a routerLink="contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div>
+      <h1>Hi, I'm </h1>
+      <h2 class="large-header">Crystal R. Williams</h2>
+      <p>I am a <span>Fullstack Javascript Developer</span> building web applications for the interwebs.</p>
+    </div>
+  </div>
+</header>
